@@ -183,28 +183,24 @@
 		</div>
 	</footer>
 <script>
-function myFunction() {
+var navButton = document.querySelector('div.menu-button');
+function triggerMenu() {
     var x = document.getElementById('myNav');
     if (x.style.width === '100%') {
         x.style.width = '0%';
-    } else {
-        
+    } else {       
         x.style.width = '100%';
     }
 }
 
-var classname = document.getElementsByClassName("nav_item_close");
-var menu_close = document.getElementById("myNav");
-var i;
+navButton.addEventListener('click', triggerMenu, false);
 
-function closeFunction() {
-	
-    return menu_close.style.width = "0%";
-};
-
-for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', closeFunction, false);
+var mobMenu = document.querySelector('#myNav');
+function closeMenu() {
+	mobMenu.style.width = '0%';
 }
+mobMenu.addEventListener('click', closeMenu, false);
+	
 </script>
 </body>
 </html>
