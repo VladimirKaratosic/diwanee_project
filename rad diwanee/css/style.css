@@ -161,7 +161,7 @@ h1 a {
 	background-position: 0px 0px;
 }
 
-#desktopNav {
+.desktopNav {
 	float: right;
 	margin: 0 20% 0 0;
 }
@@ -171,8 +171,12 @@ nav {
     line-height: 115px;
 }
 
-#myNav {
+.mobileNav {
 	display: none;
+}
+
+.mobileNav a {
+	color: #848484;
 }
 
 nav ul {
@@ -197,7 +201,7 @@ nav a {
 	margin: 0;
 }
 
-nav a:link, nav a:visited, nav a:hover, nav a:active {
+.desktopNav a:link, .desktopNav a:visited, .desktopNav a:hover, .desktopNav a:active {
 	color: #222222;
 }
 
@@ -553,7 +557,7 @@ hr {
 }
 
 .bottom_footer_right {
-	max-width: 240px;
+	max-width: 290px;
 	float: right;
 	line-height: 70px;
 	text-align: center;
@@ -586,13 +590,13 @@ hr {
   /**********************************************/
 
 @media screen and (max-width: 1480px) {
-	#desktopNav {
+	.desktopNav {
 	    margin: 0 18% 0 0;
 	}
 }
 
 @media screen and (max-width: 1360px) {
-	#desktopNav {
+	.desktopNav {
 	    margin: 0 15% 0 0;
 	}
 }
@@ -608,7 +612,7 @@ hr {
 		height: 560px;
 	}
 
-	#desktopNav {
+	.desktopNav {
 	    margin: 0 10% 0 0;
 	}
 }
@@ -725,17 +729,17 @@ hr {
 	}
 
 	.bottom_footer_left p::after {
-		content: "COPYRIGHT © 2015 DIWANEEE SERBIA";
+		content: "COPYRIGHT © 2017 VLADIMIR KARATOŠIĆ";
 		text-indent: 0;
 		display: block;
 		line-height: 70px;
 	}
 
-	#desktopNav {
+	.desktopNav {
 		display: none;
 	}
 
-	#myNav {
+	.mobileNav {
 		display: block;
 	}
 
@@ -756,7 +760,7 @@ hr {
 		margin-top: 25%;
 	}
 
-	#myNav {
+	.mobileNav {
 	    margin-top: 12%;
 	    height: 88%;
 	    width: 0%;
@@ -787,7 +791,7 @@ hr {
 		margin-right: 40%;
 	}
 
-	#myNav a {
+	.mobileNav a {
 		padding: 8px 8px 8px 32px;
 	    text-decoration: none;
 	    font-size: 25px;
@@ -796,7 +800,7 @@ hr {
 	    transition: 0.3s;
 	}
 
-	#myNav a:hover {
+	.mobileNav a:hover {
 		color: #f1f1f1;
 	}
 
@@ -819,7 +823,7 @@ hr {
 	    height: 300px;
 	}
 
-	#myNav {
+	.mobileNav {
 		padding-top: 7%;
 	}
 
@@ -893,7 +897,7 @@ hr {
 	    font-size: 54px;
 	}
 
-	#myNav {
+	.mobileNav {
 		margin-top: 15%;
     	height: 85%;
 	}
@@ -934,7 +938,7 @@ hr {
 		font-size: 24px;
 	}
 
-	#myNav {
+	.mobileNav {
 	    margin-top: 21%;
     	height: 79%;
     	padding-top: 43%;
@@ -962,7 +966,7 @@ hr {
 }
 
 @media (max-width:340px) and (max-height:500px) {
-	#myNav {
+	.mobileNav {
 		padding-top: 30%;
 	}
 
