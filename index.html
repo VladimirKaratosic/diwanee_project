@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="author" content="Vladiimir Karatosic" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge, chrome=1">
+	<meta name="author" content="Vladiimir Karatosic">
 	<title>Diwanee Serbia</title>
-	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
 		<h1>
 			<a href="index.html" title="Diwanee">Diwanee</a>
 		</h1>
-		<nav class="desktopNav">
+		<nav id="desktopNav">
 			<ul>
-				<li><a class="nav_item_close items" href="#o_nama">O nama</a></li>
-				<li class="middle_el"><a class="nav_item_close items" href="#poslovi">Poslovi</a></li>
-				<li><a class="nav_item_close items" href="#kontakt">Kontakt</a></li>
+				<li><a class="nav_item_close" href="#o_nama">O nama</a></li>
+				<li class="middle_el"><a class="nav_item_close" href="#poslovi">Poslovi</a></li>
+				<li><a class="nav_item_close" href="#kontakt">Kontakt</a></li>
 			</ul>
 		</nav>
-			<div class="menu-button"></div>
-		<nav class="mobileNav">
+			<div class="menu-button" onclick="myFunction()"></div>
+		<nav id="myNav">
 			<ul>
-				<li><a class="nav_item_close items" href="#o_nama">O nama</a></li>
-				<li class="middle_el"><a class="nav_item_close items" href="#poslovi">Poslovi</a></li>
-				<li><a class="nav_item_close items" href="#kontakt">Kontakt</a></li>
+				<li><a class="nav_item_close" href="#o_nama">O nama</a></li>
+				<li class="middle_el"><a class="nav_item_close" href="#poslovi">Poslovi</a></li>
+				<li><a class="nav_item_close" href="#kontakt">Kontakt</a></li>
 				<li class="social_item">
 					<ul>
 						<li class="menu_text">Pratite nas</li>
-						<li><a class="nav_items nav_item_close" href="https://twitter.com/diwanee" target="_blank"><img src="images/twitter-mobile.png" alt="twitter-mobile"></a></li>
-						<li><a class="nav_items nav_item_close" href="https://www.facebook.com/Diwanee" target="_blank"><img src="images/facebook-mobile.png" alt="facebook-mobile"></a></li>
+						<li><a class="nav_items nav_item_close" href="https://twitter.com/diwanee" target="_blank"><img src="images/twitter-mobile.png"></a></li>
+						<li><a class="nav_items nav_item_close" href="https://www.facebook.com/Diwanee" target="_blank"><img src="images/facebook-mobile.png"></a></li>
 					</ul>
 				</li>
 			</ul>
@@ -48,7 +45,7 @@
 	<section class="shapes_section">
 		<article class="shapes ultra_light_gray_bg">
 			<div class="triangle_circle_square">
-				<img src="images/triangle.png" alt="triangle">
+				<img src="images/triangle.png">
 			</div>
 			<h5>Development</h5>
 			<hr class="gray_dash">
@@ -56,7 +53,7 @@
 		</article>
 		<article class="shapes gray_bg">
 			<div class="triangle_circle_square">
-				<img src="images/circle.png" alt="circle">
+				<img src="images/circle.png">
 			</div>
 			<h5>Web & ui design</h5>
 			<hr class="gray_dash">
@@ -64,7 +61,7 @@
 		</article>
 		<article class="shapes ultra_light_gray_bg">
 			<div class="triangle_circle_square">
-				<img src="images/square.png" alt="square">
+				<img src="images/square.png">
 			</div>
 			<h5>Work in team</h5>
 			<hr class="gray_dash">
@@ -74,11 +71,13 @@
 	<div class="clearfix"></div>
 	<section>
 		<article>
-			<div class="wrapper topic topic_main" id="poslovi">			
+			<div class="wrapper topic topic_main">
+				<a name="poslovi">
 				<h6>Otvorene pozicije</h6>
 				<h3>Poslovi</h3>
 				<hr class="red_dash">
 				<p>We are always looking for motivated, multi-talented, and organized people to join our diverse team.</p>
+				</a>
 			</div>
 		</article>
 		<article class="white_bg">
@@ -124,25 +123,29 @@
 	</section>
 	<section>
 		<article class="ultra_light_gray_bg o_nama_article">
-			<div class="wrapper topic topic_about" id="o_nama">
+			<div class="wrapper topic topic_about">
+				<a name="o_nama">
 				<h6>Diwanee Beograd</h6>
 				<h3>DIGITAL MEDIA COMPANY</h3>
 				<hr class="red_dash">
 				<p>Diwanee je digitalna medijska kompanija, okrenuta velikoj ženskoj publici na Bliskom istoku. Naša kom<wbr>panija stvara i distribuira originalan, visokokvalitetan i pouzdan sadržaj. Diwanee je takođe partner sa You<wbr>Tube-om, i zajedno smo pokrenuli kanal "DUNIATI", nudeći na taj način sve vrste bogatog video sa- držaja za arapske žene širom sveta.</p>
 				<p>Radimo sa velikim brojem brendova radi povećanja angažovanja, a sve u digitalnom prostoru. Diwanee je partner i sa velikim regionalnim vlasnicima medija, kako bismo upravljali svojom digitalnom prisutnošću.</p>
+				</a>
 			</div>
 		</article>
-		<div class="social white_bg_social" id="kontakt">
+		<div class="social white_bg_social">
+			<a name="kontakt">
 			<h6>Pratite nas</h6>
-			<a href="https://www.facebook.com/Diwanee" target="_blank"><img src="images/facebook-big.jpg" alt="facebook-big"></a>
-			<a href="https://twitter.com/diwanee" target="_blank"><img src="images/twitter-big.jpg" alt="twitter-big"></a>
+			<a href="https://www.facebook.com/Diwanee" target="_blank"><img src="images/facebook-big.jpg"></a>
+			<a href="https://twitter.com/diwanee" target="_blank"><img src="images/twitter-big.jpg"></a>
+			</a>
 		</div>
 	</section>
 	<footer>
 		<div class="black_bg">
 			<div class="wrapper_footer_top">
 				<article>
-					<img src="images/map_marker.png" alt="map_marker">
+					<img src="images/map_marker.png">
 					<span>DUBAI</span>
 					<p>Office Park, Building Block A<br>
 					Units A301-A302<br>
@@ -150,7 +153,7 @@
 					T: 971 4 - 434 7147</p>
 				</article>
 				<article>
-					<img src="images/map_marker.png" alt="map_marker">
+					<img src="images/map_marker.png">
 					<span>BEIRUT</span>
 					<p>Dora, Seaside Road,<br>
 					BCP bldg (Facing Demco Steel)<br> 
@@ -158,7 +161,7 @@
 					Fax: 961 1 - 244 846</p>
 				</article>
 				<article>
-					<img src="images/map_marker.png" alt="map_marker">
+					<img src="images/map_marker.png">
 					<span>BELGRADE</span>
 					<p>Resavska 33,<br>
 					11000 Beograd<br> 
@@ -169,16 +172,39 @@
 		<div class="bottom_footer black_footer_bg">
 			<div class="wrapper_footer_bottom">
 				<div class="bottom_footer_right">
-					<a href="https://www.linkedin.com/company/diwanee" target="_blank"><img src="images/linked_in.png" alt="linked_in"></a>
-					<a href="https://twitter.com/diwanee" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
-					<p><a href="http://www.vladimirkaratosic.com/" target="_blank">www.vladimirkaratosic.com</a></p>
+					<a href="https://www.linkedin.com/company/diwanee" target="_blank"><img src="images/linked_in.png"></a>
+					<a href="https://twitter.com/diwanee" target="_blank"><img src="images/twitter.png"></a>
+					<p><a href="http://www.diwanee.com/" target="_blank">www.diwanee.com</a></p>
 				</div>
 				<div class="bottom_footer_left bottom_footer_left_bg">
-					<p>COPYRIGHT © 2017 VLADIMIR KARATOŠIĆ. ALL RIGHTS RESERVED</p>
+					<p>COPYRIGHT © 2015 DIWANEEE SERBIA ALL RIGHTS RESERVED</p>
 				</div>
 			</div>
 		</div>
 	</footer>
-<script src="js/script.js"></script>
+<script>
+function myFunction() {
+    var x = document.getElementById('myNav');
+    if (x.style.width === '100%') {
+        x.style.width = '0%';
+    } else {
+        
+        x.style.width = '100%';
+    }
+}
+
+var classname = document.getElementsByClassName("nav_item_close");
+var menu_close = document.getElementById("myNav");
+var i;
+
+function closeFunction() {
+	
+    return menu_close.style.width = "0%";
+};
+
+for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', closeFunction, false);
+}
+</script>
 </body>
 </html>
